@@ -1,0 +1,106 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img 
+      src="https://wpbingosite.com/wordpress/flacio/wp-content/uploads/2021/12/logo.png"
+       loading="lazy" width="150" height="60" alt="dt-platina"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mt-4 mb-lg-0">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            [routerLink]="['/']"
+            [routerLinkActive]="'text-danger'"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/products']"
+            [routerLinkActive]="'text-danger'"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Products</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/products', 0, 'edit']"
+            [routerLinkActive]="'text-danger'"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Add Products</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Login</a>
+        </li>
+       
+      </ul>
+      <div class="navbar-text">
+          <i class="bi bi-heart"></i>
+          <i class="bi bi-cart4"></i>
+         
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+<!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            [routerLink]="['/']"
+            [routerLinkActive]="'text-danger'"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/products']"
+            [routerLinkActive]="'text-danger'"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Products</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/products', 0, 'edit']"
+            [routerLinkActive]="'text-danger'"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Add Products</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
